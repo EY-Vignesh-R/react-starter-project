@@ -6,6 +6,7 @@ import { useState } from "react";
 function App() {
 const [ubuttn,setUbuttn]=useState(false)
 const [abuttn,setAbuttn]=useState(false)
+
   const users = [
     { id: 1, name: "Virat",age:18,gender:'M',email_id:"alice@gmail.com" },
     { id: 2, name: "Sachin",age:24,gender:'M',email_id:"sachin@gmail.com" },
@@ -29,10 +30,10 @@ const showAdmins=()=>setAbuttn(true)
   <Child date={new Date().toString()}/>
   <Child date={new Date().toString()}/>
   <Child date={new Date().toString()}/> */}
-<div className='align'>
+
 <button onClick={showUsers} className="move">Show Users</button>
 <button onClick={showAdmins} className="move">Show Admins</button>
-</div>
+
 {ubuttn && <Users user_details={users}/>}
   <br/>
 {abuttn && <Admin admin_details={admins}/>} 
