@@ -31,14 +31,14 @@ const showAdmins=()=>setAbuttn(true)
   <Child date={new Date().toString()}/>
   <Child date={new Date().toString()}/> */}
 
+  {ubuttn && <Users user_details={users}/>}
+  <br/>
+  {abuttn && <Admin admin_details={admins}/>} 
+
 <button onClick={showUsers} className="move">Show Users</button>
 <button onClick={showAdmins} className="move">Show Admins</button>
 
-{ubuttn && <Users user_details={users}/>}
-  <br/>
-{abuttn && <Admin admin_details={admins}/>} 
-
-  </div>
+</div>
    
   );
 }
