@@ -1,6 +1,6 @@
 import './User.css';
 const Admin=(props)=>{
-   const admin=props.admin_details 
+   const admin=props.adminDetails 
 return(
     <table >
         <tr >
@@ -13,7 +13,7 @@ return(
                 return(
                     <tr key={x.id}>
                         <td>{x.name}</td>
-                        <td>{x.admin_email_id}</td>
+                        <td>{x.adminEmailId}</td>
                         <td>{x.password}</td>
                     </tr>
                 );

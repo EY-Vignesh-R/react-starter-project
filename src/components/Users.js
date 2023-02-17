@@ -10,13 +10,13 @@ return(<div >
             <th>Email ID</th>
         </tr>
         {
-            props.user_details.map((x)=>{
+            props.userDetails.map((x)=>{
                 return(
                     <tr key={x.id}>
                         <td>{x.name}</td>
                         <td>{x.age}</td>
                         <td>{x.gender}</td>
-                        <td>{x.email_id}</td>
+                        <td>{x.emailId}</td>
                     </tr>
                 );
             })
