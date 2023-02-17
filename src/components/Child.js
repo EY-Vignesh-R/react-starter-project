@@ -1,5 +1,5 @@
 const Child = (props)=>{
-    return(<div>
+    return(<div id="a">
         <h1>
             {props.date}
        </h1>
