@@ -1,0 +1,15 @@
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  border-color: #96D4D4;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.move{
+  margin-left: 35rem;
+  margin-top: 50px;
+  width: 140px;
+}
+
