@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Form=()=>{
+const FourthTask=()=>{
     const [formInfo,setFormInfo]=useState(
         {
             nameData:"",
@@ -65,5 +65,5 @@ return(
     </form>
 )
 }
-export default Form
+export default FourthTask
 
