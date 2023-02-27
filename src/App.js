@@ -1,8 +1,10 @@
 import Routing from "./components/Routing/Routing";
 function App() {
-  return (
+
+  return ( 
+  <div>
   <Routing />
- 
+ </div>
   )
 }
 
