@@ -11,10 +11,10 @@ const ProductList = () => {
     { id: 4, productName: "HP EliteBook", productPrice: 150000 },
     { id: 5, productName: "Realme Mini Pad", productPrice: 9999 },
   ];
-const dispatch = useDispatch();
-const addProductHandler=(prod)=>{
-dispatch(addProduct({id:nanoid(),product:prod}));
-}
+  const dispatch = useDispatch();
+  const addProductHandler = (prod) => {
+    dispatch(addProduct({ id: nanoid(), product: prod }));
+  };
   return (
     <div>
       <h1>Product List</h1>
@@ -27,16 +27,24 @@ dispatch(addProduct({id:nanoid(),product:prod}));
                 <li>
                   Price :<b>Rs {x.productPrice}</b>
                 </li>
-                <button onClick={()=>{addProductHandler(x);}}>Add to Cart</button>
+                <button
+                  onClick={() => {
+                    addProductHandler(x);
+                  }}
+                >
+                  Add to Cart
+                </button>
               </ul>
             </li>
           );
         })}
       </ol>
-      <button><Link style={{textDecoration: 'none'}} to={"/cartItems"}>Cart</Link></button>
-
+      <button>
+        <Link style={{ textDecoration: "none" }} to={"/cartItems"}>
+          Cart
+        </Link>
+      </button>
     </div>
-
   );
 };
 export default ProductList;
